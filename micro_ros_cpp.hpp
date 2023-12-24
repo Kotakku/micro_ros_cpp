@@ -197,15 +197,6 @@ static void spin_some_ms(uint32_t ms)
     spin_some_ns(ms);
 }
 
-static void spin(uint32_t interval_ms = 10)
-{
-    while(1)
-    {
-        spin_some_ms(interval_ms);
-        delay(interval_ms);
-    }
-}
-
 class Node;
 
 template<typename T>
